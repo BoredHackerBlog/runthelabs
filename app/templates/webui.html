@@ -1,0 +1,41 @@
+<script>
+window.setInterval("reloadIFrame();", 10000);
+
+function reloadIFrame() {
+document.getElementById('frame_status').src = document.getElementById('frame_status').src
+document.getElementById('frame_info').src = document.getElementById('frame_info').src
+document.getElementById('frame_control').src = document.getElementById('frame_control').src
+}
+</script>
+
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td><img src="http://livlab.org/wp-content/uploads/2017/07/LLLogo.png"></td>
+<td><h3>RunLabs</h3></td>
+<td>
+<h3>Lab Status</h3>
+<iframe style="width: 100%;" id="frame_status" src="status"></iframe>
+</td>
+</tr>
+
+<tr>
+<td><iframe style="width: 100%;" id="frame_upload" src="webupload"></iframe></td>
+<td><h3>Lab Configuration</h3>
+<iframe style="width: 100%;" id="frame_info" src="info"></iframe>
+<td>
+<h3>Start lab</h3>
+<a target="_blank" href="on">On</a>
+<h3>Stop lab</h3>
+<a target="_blank" href="off">Off</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<h3>VM Admin</h3>
+<iframe id="frame_control" style="width: 100%; height: 100%" src="control"></iframe>
+</td>
+</tr>
+</tbody>
+</table>

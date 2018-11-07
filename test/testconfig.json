@@ -1,0 +1,17 @@
+{
+	"comment": "Just live booting two TinyCore Linux virtual machines",
+	"author": "Nobody",
+	"vm": {
+		"tc2": {
+			"disk": "/home/research/runthelabs/tc.iso",
+			"ram": "512",
+			"network": "1"
+		},
+		"tc1": {
+			"disk": "/home/research/runthelabs/tc.iso",
+			"ram": "512",
+			"network": "1"
+		}
+	},
+	"title": "Testing TinyCore Linux"
+}

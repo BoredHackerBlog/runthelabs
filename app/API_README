@@ -1,0 +1,15 @@
+=METHOD_TYPE URL RETURN(JSON)=
+POST /upload upload:true/false
+GET /info json_file //uploaded json file
+GET /on on:true/false
+GET /off off:true/false
+GET /status status:on/off
+GET /passwords {passwords: {vmname:name,port:port,password:pw}...}
+GET /changepassword/vmname change:true/false
+GET /reboot/vmname reboot:true/false
+
+
+=CURL examples=
+curl -F file=@Minimega_installation.sh -XPOST http://admin:admin@localhost:1337/upload
+curl http://admin:admin@localhost:1337/info
+curl http://admin:admin@localhost:1337/changepassword/XP
