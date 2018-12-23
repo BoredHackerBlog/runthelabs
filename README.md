@@ -1,3 +1,5 @@
+READ THIS FIRST: Vulns https://www.boredhackerblog.info/2018/12/doing-vulnerability-assessment-of-my.html
+
 Read Documenation!
 
 This project is very similar to this: https://github.com/BoredHackerBlog/json2labs/
